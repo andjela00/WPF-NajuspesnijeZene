@@ -1,0 +1,104 @@
+﻿<Window x:Class="HCI_projekat.DodavanjeSlike"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_projekat"
+        mc:Ignorable="d"
+        Title="DodavanjeSlike" Background="LightPink" Height="650" Width="1000 " WindowStyle="ToolWindow" MouseLeftButtonDown="Window_MouseLeftButtonDown" >
+
+
+    <Grid Width="969" Margin="10,10,14.6,0.8">
+        <ListView Background="Transparent" BorderBrush="Gray" SelectionChanged="lista_SelectionChanged" MouseLeftButtonUp="lista_MouseLeftButtonUp" Canvas.Left="10" Canvas.Top="0" Height="339" Name="lista" Width="909" HorizontalAlignment="Left" 
+                  VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" 
+                  FlowDirection="LeftToRight" Margin="50,39,0,0">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Width="909" Orientation="Horizontal" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="339"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListViewItem  Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/1.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem  Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/2.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem  Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/3.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem  Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/4.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/5.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110"  VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/6.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem  Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/7.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/8.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/9.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/10.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/11.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/12.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/13.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/14.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+            <ListViewItem Height="140" Width="110" VerticalContentAlignment="Bottom" Margin="5">
+                <ListViewItem.Background>
+                    <ImageBrush ImageSource="slike/15.jpg"></ImageBrush>
+                </ListViewItem.Background>
+            </ListViewItem>
+        </ListView>
+
+        <Canvas x:Name="KanvasSlika" Margin="50,397,10,10" AllowDrop="True" Drop="KanvasSlika_Drop">
+            <Image Source="slike/49665-200.png" Canvas.Left="371" Height="108" Width="91" Canvas.Top="50"/>
+            <TextBlock Text="Ovde prevucite zeljenu sliku" HorizontalAlignment="Center" TextAlignment="Center" Width="150" Height="20" Canvas.Top="10" Canvas.Left="349"/>
+        </Canvas>
+
+    </Grid>
+
+</Window>
